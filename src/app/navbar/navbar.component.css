@@ -1,0 +1,16 @@
+.nav-link{
+    color: white;
+    display: inline-block;
+}
+.bg-main{
+    background-color: #2C3E50;
+}
+.bg-second{
+    background-color: #1ABC9C;
+}
+nav{
+    transition: all 0.5s;
+}
+.navbar.scrolled{
+    padding: 20px;
+}

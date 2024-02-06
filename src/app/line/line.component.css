@@ -1,0 +1,6 @@
+.line{
+    width: 80px;
+    height: 4px;
+    display: inline-block;
+    transform: translateY(-50%);
+}

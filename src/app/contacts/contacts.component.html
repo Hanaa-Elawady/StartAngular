@@ -1,0 +1,21 @@
+<section class="text-center">
+    <div class="container py-5">
+        <h2 class="text-uppercase fs-1 fw-bold">contact section</h2>
+        <app-line [parentColor]="Color"></app-line>
+        <form action="" class="text-start w-50 m-auto" >
+            <label [ngClass]="{'labelUP': name ==true }" for="#name">userName:</label>
+            <input [(ngModel)]="nameInput" [ngModelOptions]="{standalone: true}" (input)="labelupp()" id="name" type="text" class="form-control border-0 border-bottom py-3 shadow-none mb-4" placeholder="userName">
+
+            <label [ngClass]="{'labelUP': age ==true }" for="#age">userAge:</label>
+            <input [(ngModel)]="ageInput" [ngModelOptions]="{standalone: true}" (input)="labelupp()" id="age" type="number" class="form-control border-0 border-bottom py-3 shadow-none mb-4" placeholder="userAge">
+
+            <label [ngClass]="{'labelUP': email ==true }" for="#email">userEmail:</label>
+            <input [(ngModel)]="emailInput" [ngModelOptions]="{standalone: true}" (input)="labelupp()" id="email" type="email" class="form-control border-0 border-bottom py-3 shadow-none mb-4" placeholder="userEmail">
+
+            <label [ngClass]="{'labelUP': password ==true }" for="#password">userPassword:</label>
+            <input [(ngModel)]="PasswordInput" [ngModelOptions]="{standalone: true}" (input)="labelupp()" id="password" type="password" class="form-control border-0 border-bottom py-3 shadow-none mb-4" placeholder="userPassword">
+
+            <button class="btn text-white" >Send Message</button>
+        </form>
+    </div>
+</section>

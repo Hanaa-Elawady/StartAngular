@@ -1,0 +1,26 @@
+<section class="bg-white text-center">
+    <div class="container py-5">
+        <h2 class="fs-1 fw-bold text-uppercase">portfolio component</h2>
+        <app-line [parentColor]="Color"></app-line>
+        <div class="row gy-5 gx-5 col" >
+
+            <div class="col-md-4" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal" *ngFor="let source of imagesrc ; index as i" (click)="modalpop(i)">
+
+                <div class="imgcontainer position-relative rounded-3 overflow-hidden">
+                    <img [src]="source" alt="" class="w-100" >
+                    <div class="fadecontainer d-flex"><i class="fa-solid fa-plus m-auto fa-6x text-white"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <img [src]="imgmodal" alt="">
+              </div>
+            </div>
+        </div> 
+
+ 
+    </div>
+</section>

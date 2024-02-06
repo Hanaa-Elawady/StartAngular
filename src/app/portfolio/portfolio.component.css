@@ -1,0 +1,20 @@
+:host{
+    display: block;
+    padding-top: 100px;
+}
+.fadecontainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: #1ABC9C;
+    transition: all 0.5s;
+}
+.imgcontainer:hover .fadecontainer{
+    opacity: 0.9;
+}
+h2{
+    color: #2C3E50;
+}

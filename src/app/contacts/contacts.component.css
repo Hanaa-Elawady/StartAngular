@@ -1,0 +1,25 @@
+:host{
+    display: block;
+    padding-top: 100px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+   appearance: none;
+   display: none;
+}
+label{
+    color: #1ABC9C;
+    position: relative;
+    top: 50px;
+    z-index: -1;
+    transition: all 0.5s;
+}
+.labelUP{
+    top: 0;
+}
+.btn{
+    background-color: #1ABC9C !important;
+}
+h2{
+    color: #2C3E50;
+}
